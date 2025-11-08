@@ -10,6 +10,9 @@ from cfonts import render, say
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)  
 
+from keep_alive import keep_alive
+keep_alive()
+
 # Enhanced Configuration Variables
 ADMIN_UID = "2272418033"
 server2 = "bd"
