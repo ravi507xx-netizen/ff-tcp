@@ -4,6 +4,9 @@ import subprocess, os, signal
 app = Flask(__name__)
 BOT_PROC = None  # global bot process
 
+from keep_alive import keep_alive
+keep_alive()
+
 def start_bot():
     """Start bot_core.py in a child process if not already running."""
     global BOT_PROC
